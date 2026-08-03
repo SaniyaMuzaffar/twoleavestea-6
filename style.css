@@ -1,0 +1,97 @@
+:root{
+    --primary-blue: #2A2857;
+    --second-blue:#C0DBFF;
+    --black:#000;
+    --white:#fff;
+    --body-color:#FBF9EB;
+}
+
+@font-face {
+    font-family:robot ;
+    src: url(https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RobotoMono-Regular.ttf?v=1768204557);
+}
+@font-face {
+    font-family:reckless ;
+    src: url(https://cdn.shopify.com/s/files/1/0297/8132/7932/files/RecklessCondensedS-TRIAL-Book.woff?v=1768655865);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/* nav 1 */
+
+.up-nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-family: robot;
+    padding: 0.8vh 0vh;
+    text-transform: uppercase;
+}
+
+.up-nav h4 {
+font-weight: 500;
+font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C0DBFF;
+    margin: 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 0.9rem;
+    padding: 0.4rem 1.3rem;
+    background-color: var(--white);
+}
+
+.nav-1 {
+    font-family: reckless;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 33vw;
+}
+
+.nav-1 h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.nav-1 i {
+    font-size: 0.8rem;
+    padding: 0.8px;
+    background-color: var(--second-blue);
+    border-radius: 50%;
+    border: 1px solid var(--black);
+}
+
+.nav-3 {
+display: flex;
+align-items: center;
+justify-content: end;
+font-family: robot;
+gap: 2rem;
+text-transform: uppercase;
+}
+
+.nav-3 h3 {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
