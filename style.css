@@ -293,8 +293,6 @@ nav a:hover::after {
 /* section 2 */
 
 .s-2 {
-    min-height: 180vh;
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -302,6 +300,10 @@ nav a:hover::after {
     border-bottom: 2px solid var(--black);
     /* justify-content: center; */
 }
+
+/* .a-btn-s-2 { */
+    /* border-bottom: 2px solid black; */
+/* } */
 
 /* section 2 h1 */
 .s-2-h1 {
@@ -343,16 +345,17 @@ nav a:hover::after {
 
 /* section 2 card */
 .card-container {
-    height: auto;
-    width: 21vw;
+    height: 570px;
+    width: 350px;
+    /* background-color: #FFB500; */
     font-family: figtree;
     margin-top: 4rem;
     /* background-color: #904343; */
 }
 
 .card {
-    height: auto;
-    width: 21vw;
+    height: 390px;
+    width: 350px;
     border-radius: 0.7rem;
     border: 1px solid var(--black);
     padding: clamp(0.3rem, 5vw, 1rem);
@@ -385,28 +388,34 @@ nav a:hover::after {
     justify-content: center;
     /* height: 35vh; */
     width: 100%;
-    transition: all ease-in-out 0.3s;
-}
-
-.img-div:hover {
-    transform: scale(1.1);
+    position: relative;
 }
 
 .img-div img {
     width: 85%;
+        transition: all ease-in-out 0.3s;
     /* height: 85%; */
     /* object-fit: cover; */
 }
 
-.info {
-    display: flex;
-    justify-content: end;
+.img-div img:hover  {
+    transform: scale(1.1);
 }
+
+/* .info {
+    /* display: flex; */
+     /* justify-content: ;
+    align-items: end;  */
+    /* padding: 1rem; */
+/* } */ 
 
 .add {
     display: flex;
     background-color: var(--white);
-    height: auto;
+    position: absolute;
+    bottom: -55px;
+    right: -5px;
+    /* height: auto; */
     width: 2.8rem;
     flex-direction: column;
     align-items: center;
@@ -418,6 +427,10 @@ nav a:hover::after {
     cursor: pointer;
 }
 
+.add a,
+.add i {
+    font-size: clamp(0.5rem, 5vw, 0.9rem)
+}
 .add:hover {
     background-color: var(--primary-blue);
     color: var(--white);
@@ -428,7 +441,7 @@ nav a:hover::after {
 }
 
 .card-text {
-    width: 90%;
+    width: 95%;
 }
 
 .card-text h3 {
@@ -502,12 +515,15 @@ nav a:hover::after {
     background-color: rgb(174, 224, 249);
 }
 
+/* section 2 explore button */
+
 .a-btn-s-2 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
+    padding: 2rem 0rem 7rem 0rem;
 }
 
 .s-2-explore-btn a {
@@ -520,7 +536,7 @@ nav a:hover::after {
     transition: ease 0.1s;
     font-family: figtree;
     font-size: 1.1rem;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
 }
 
 .s-2-explore-btn a:hover {
@@ -588,37 +604,65 @@ nav a:hover::after {
 
     .card-container,
     .card {
-        width: 35vw;
         margin-top: 1rem;
     }
 
-    .a-btn-s-2 a{
-        width: 100%;
+    .s-2-explore-btn{
         padding: 0.8rem 2rem;
         font-size: 1rem;
     }
-}
 
-@media screen and (max-width: 955px) {
-
-    .card-container,
-    .card {
-        width: 40vw;
+    .s-2-explore-btn a {
+    padding: 0.8rem 2rem;
     }
 }
 
-@media screen and (max-width: 765px) {
+ @media screen and (max-width: 700px) {
 
     .card-container,
     .card {
-        width: 45vw;
+        width:300px ;
     }
+    .card-container {
+        height: 530px;
+    }
+
+    .card {
+        height: 320px;
+    }
+
+    .add {
+    bottom: -30px;
+    right: -5px;
 }
 
-@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 470px) {
+
+    .card-container,
+    .card {
+        width: 250px;
+    }
+
+    .card-container {
+        height: 480px;
+    }
+    .card {
+        height: 280px;
+    }
+
+        .add {
+    bottom: -33px;
+    right: -4px;
+}
+}
+
+/* @media screen and (max-width: 650px) {
 
     .card-container,
     .card {
         width: 60vw;
     }
-}
+} */ 
