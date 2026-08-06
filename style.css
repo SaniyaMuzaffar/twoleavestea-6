@@ -755,8 +755,7 @@ nav a:hover::after {
     height: 100%;
     width: 100%;
     background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2000);
-    object-fit: cover;
-    /* background-position: bottom; */
+    background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     position: relative;
@@ -899,6 +898,111 @@ nav a:hover::after {
 .s-4-btn a:hover {
     color: var(--white);
     background-color: var(--primary-blue);
+}
+
+/* section 5 */
+
+.s-5 {
+    height: 100%;
+    width: 100%;
+}
+
+.s-5-search {
+    /* height: 25rem; */
+    width: 100%;
+    justify-content: center;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Discover-tag {
+    width: 70%;
+    /* background-color: #ADE674; */
+    transform: rotate(-3deg);
+    padding: 5rem 0rem 3rem 0rem;
+}
+
+.Discover-tag a {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2rem, 10vw, 5rem);
+    padding: 0rem 0.4rem;
+    font-family: midnight;
+    font-weight: 600;
+    word-spacing: 0.5rem;
+    background-color: #FF7F31;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.Discover-text {
+    width: 70%;
+    padding:1rem 0rem 2rem 0rem;
+    /* background-color: brown; */
+}
+
+.Discover-text h1 {
+    font-family: reckless;
+    font-size: clamp(2rem, 7vw, 4rem);
+    font-weight: 300;
+}
+
+.s-5-scerchbar {
+    width: 70%;
+    padding:1rem 0rem 3rem 0rem;
+    /* background-color: #A2C9FC; */
+}
+
+.s-5-scerchbar input {
+    width: 50%;
+    height: 5rem;
+    padding: 2rem;
+    outline: none;
+    border: 1px solid var(--black);
+    border-radius: 0.7rem;
+    font-size: clamp(0.9rem, 7vw, 1.7rem);
+    font-family: reckless;
+    color: #00000039;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.s-5-scerchbar input:hover {
+    width: 100%;
+    display: flex;
+}
+
+.s-5-exp {
+    width: 70%;
+    padding: 2.2rem 0rem 0.4rem 0rem;
+    /* background-color: #FFD265; */
+    display: flex;
+    font-family: figtree;
+    text-transform: uppercase;
+    color: #000000bc;
+    font-size: 0.4rem, 3vw, 07rem;
+}
+
+.s-5-exp-btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 0.5rem;
+    font-family: reckless;
+    font-size: clamp(1.8rem, 8vw, 2rem);
+    
+    padding: 1rem 0rem;
+}
+
+.s-5-exp-btn a {
+    border: 1px solid var(--black);
+    border-radius: 0.7rem;
+    line-height: 1.2;
+    padding: 0.3rem 1.2rem;
+    background-color: #DAEAFF;
 }
 
 /* responsive section 1 */
