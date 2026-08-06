@@ -905,6 +905,11 @@ nav a:hover::after {
 .s-5 {
     height: 100%;
     width: 100%;
+    /* background-color: pink; */
+    /* padding: 3rem 0rem 5rem 0rem; */
+    padding-top: clapm(1rem, 4vh, 3rem);
+    /* padding-bottom: clapm(1.2rem, 3vh, 3rem); */
+    padding-bottom: 5rem;
 }
 
 .s-5-search {
@@ -939,7 +944,7 @@ nav a:hover::after {
 
 .Discover-text {
     width: 70%;
-    padding:1rem 0rem 2rem 0rem;
+    padding: 1rem 0rem 2rem 0rem;
     /* background-color: brown; */
 }
 
@@ -951,7 +956,7 @@ nav a:hover::after {
 
 .s-5-scerchbar {
     width: 70%;
-    padding:1rem 0rem 3rem 0rem;
+    padding: 1rem 0rem 3rem 0rem;
     /* background-color: #A2C9FC; */
 }
 
@@ -964,7 +969,7 @@ nav a:hover::after {
     border-radius: 0.7rem;
     font-size: clamp(0.9rem, 7vw, 1.7rem);
     font-family: reckless;
-    color: #00000039;
+    color: #0000007e;
     text-transform: capitalize;
     background-color: transparent;
     transition: 0.4s;
@@ -982,7 +987,7 @@ nav a:hover::after {
     display: flex;
     font-family: figtree;
     text-transform: uppercase;
-    color: #000000bc;
+    color: #000000be;
     font-size: 0.4rem, 3vw, 07rem;
 }
 
@@ -993,7 +998,7 @@ nav a:hover::after {
     gap: 0.5rem;
     font-family: reckless;
     font-size: clamp(1.8rem, 8vw, 2rem);
-    
+    /* background-color: #C790DB; */
     padding: 1rem 0rem;
 }
 
@@ -1003,9 +1008,86 @@ nav a:hover::after {
     line-height: 1.2;
     padding: 0.3rem 1.2rem;
     background-color: #DAEAFF;
+    transition: 0.3s;
+    color: #201C1A;
 }
 
-/* responsive section 1 */
+.s-5-exp-btn a:hover {
+    background-color: #A2C9FC;
+}
+
+/* section 6 */
+
+.s-6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 5rem;
+}
+
+.s-6-img-div {
+    height: 100%;
+    width: 50%;
+}
+
+.s-6-img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.s-6-text-div {
+    height: 100%;
+    width: 50%;
+    background-color: var(--primary-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(3rem, 5vw, 4rem);
+}
+
+.s-6-h1 h1 {
+    width: 90%;
+    padding: 1rem 0rem;
+    color: var(--white);
+    font-family: reckless;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.s-6-p p {
+    width: 80%;
+    padding: 1rem 0rem;
+    color: var(--white);
+    font-family: figtree;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-weight: 500;
+}
+
+.s-6-btn {
+    padding: 3rem 0rem;
+    width: 80%;
+}
+
+.s-6-btn a {
+    padding: 0.9rem 4rem;
+    font-family: figtree;
+    background-color: var(--white);
+    /* color: var(--white); */
+    border: 1px solid var(--black);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+
+.s-6-btn a:hover {
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+
+/* responsive section  */
 
 .phone-nav {
     display: none;
@@ -1108,6 +1190,62 @@ nav a:hover::after {
         text-align: center;
     }
 
+    /* section 5 */
+    .Discover-tag,
+    .Discover-text,
+    .s-5-scerchbar,
+    .s-5-exp,
+    .s-5-exp-btn {
+        width: 90%;
+    }
+
+    /* section 6 */
+    .s-6 {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .s-6-img-div {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .s-6-text-div {
+        padding: 2rem;
+        width: 100%;
+        height: 43%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .s-6-h1 h1,
+    .s-6-p p {
+        margin: 0 auto;
+    }
+
+    .s-6-h1,
+    .s-6-p,
+    .s-6-btn {
+        width: 80%;
+    }
+
+    .s-6-btn a {
+        display: inline-block;
+        width: 50%;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .s-5 {
+        padding-bottom: 3rem;
+    }
+    .s-6 {
+        padding-top: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1144,6 +1282,29 @@ nav a:hover::after {
     .s-3-card-container {
         margin-top: 0rem;
     }
+
+    /* section 5 */
+    .s-5-scerchbar input {
+        width: 100%;
+    }
+
+    /* section 6 */
+    .s-6-btn {
+        padding: 2rem;
+    }
+
+    .s-6-btn a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .s-6-h1,
+    .s-6-p,
+    .s-6-btn {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -1165,4 +1326,11 @@ nav a:hover::after {
         bottom: -33px;
         right: -4px;
     }
+
+    .s-6-h1,
+    .s-6-p,
+    .s-6-btn {
+        width: 100%;
+    }
+
 }
