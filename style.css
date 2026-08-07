@@ -734,8 +734,9 @@ nav a:hover::after {
     height: 100%;
     width: 100%;
     background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2000);
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
+    background-size: cover;
     /* background-attachment: fixed; */
     position: relative;
     padding: 2rem;
@@ -1355,8 +1356,7 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #4A6808; */
-    padding: 2rem 0rem ;
+    padding: 2rem 0rem;
 }
 
 .s-8-btn a {
@@ -1376,6 +1376,114 @@ nav a:hover::after {
     color: var(--black);
     background-color: var(--white);
 }
+
+/* section 9 */
+.s-9 {
+    width: 100%;
+}
+
+.s-9-laptop {
+    padding: 2rem;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/1440.webp?v=1771593223&width=1125.0);
+}
+
+.s-9-text-div {
+    height: 80vh;
+    width: 30vw;
+    padding: 3rem;
+    background-color: #F26412;
+    border-radius: 0.7rem;
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 3rem;
+    left: 3rem;
+}
+
+.s-9-text-h1 h1 {
+    width: 80%;
+    color: var(--white);
+    font-family: reckless;
+    font-size: clamp(2rem, 6vw, 3.7rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.s-9-btn {
+    padding: 3rem 0rem;
+    width: 80%;
+}
+
+.s-9-btn a {
+    padding: 0.9rem 4rem;
+    font-family: figtree;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+
+.s-9-btn a:hover {
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+.s-9-phone {
+    width: 100%;
+    background-color: #F26412;
+    padding: 3rem;
+    display: none;
+}
+
+.s-9-phone-text-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.s-9-phone-text-h1 h1 {
+    color: var(--white);
+    text-align: center;
+    font-family: reckless;
+    font-size: clamp(3rem, 6vw, 3.7rem);
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.s-phone-9-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.s-phone-9-btn a {
+    font-family: figtree;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: ease 0.1s;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.s-phone-9-btn a:hover {
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+
 
 /* responsive section  */
 
@@ -1562,13 +1670,37 @@ nav a:hover::after {
     }
 
     /* section 8 */
-        .s-8-btn {
+    .s-8-btn {
         padding: 0.8rem 2rem;
         font-size: 1rem;
     }
 
     .s-8-btn a {
         padding: 0.8rem 2rem;
+    }
+
+    /* section 9 */
+
+    .s-9-phone {
+        display: block;
+    }
+
+    .s-9-text-div {
+        display: none;
+    }
+
+    .s-9-laptop {
+        height: 50vh;
+        background-size: cover;
+        width: 100%;
+        background-position: right;
+    }
+
+     .s-phone-9-btn a {
+        display: inline-block;
+        width: 100%;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
     }
 
 }
